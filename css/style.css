@@ -55,7 +55,7 @@ h6{
 
 
 nav .brand-logo {    
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ nav .brand-logo img {
 
 
 #home .overlay-section {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: url("../img/home-cover-img.jpg") repeat scroll 0 0;
   height: 100%;
   width: 100%;
 }
@@ -196,7 +196,8 @@ nav .brand-logo img {
 
 
 .profile-img {
-  border-radius: 1000px;
+  border-radius: 100px;
+  border: solid #ee4532 3px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 5px 20px 0 rgba(0, 0, 0, 0.4);
   height: 185px;
   margin: 0 auto;
@@ -213,6 +214,7 @@ nav .brand-logo img {
 
 
 .about-inner-right>p{
+  padding-left: 10px;
   color: #727272;
   font-size: 15px;
   line-height: 28px;
@@ -221,6 +223,7 @@ nav .brand-logo img {
 
 
 .about-inner-right>h3{
+  padding-left: 10px;
   margin-top: 0px;
   font-size: 24px;
   font-weight: 600;  
