@@ -158,6 +158,14 @@ nav .brand-logo img {
   text-transform: uppercase;
 }
 
+.home-social-media{
+  margin: auto;
+}
+
+.home-social-media i {
+  font-size: 28px;
+  margin: 10px;
+}
 
 .call-to-about {
   bottom: -45px;
@@ -201,7 +209,7 @@ nav .brand-logo img {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 5px 20px 0 rgba(0, 0, 0, 0.4);
   height: 185px;
   margin: 0 auto;
-  width: 185px;
+  width: 175px;
 }
 
 
@@ -278,8 +286,7 @@ nav .brand-logo img {
 }
 
 
-#skill{
-  background-color: #fff;  
+.resume-card{
   display: inline;
   padding: 60px 0;
   float: left;
@@ -287,19 +294,42 @@ nav .brand-logo img {
 }
 
 
-.skill-inner{
+.resume-card-inner{
   display: inline;
   float: left;
   width: 100%;
 }
 
 
-.skill-inner p{
+.resume-card-inner p{
   color: #727272;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-} 
+  line-height: 10px;
+}
+
+.resume-card-element {
+  margin-left: 5px;
+  line-height: 10px;
+  font-size: 15px;
+}
+
+.resume-card-element-title{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resume-card-element-subtitle{
+
+}
+
+
+
+.gray-background {
+  background-color: #fafafa;
+}
+
+.white-background {
+  background-color: white;
+}
 
 
 .title{
@@ -307,23 +337,6 @@ nav .brand-logo img {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 35px;
-  text-transform: uppercase;
-}
-
-
-.skill-progress-bar{
-  display: inline;  
-  float: left;  
-  width: 100%;  
-}
-
-
-.skill-progress-bar span {
-  color: #727272;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
@@ -337,6 +350,48 @@ nav .brand-logo img {
 .pro-bar {
   border-radius: 0px;
   height: 30px; 
+}
+
+#interests{
+  display: inline;
+  padding: 60px 0;
+  float: left;
+  width: 100%;
+}
+
+.interests-inner{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.interests-inner .title {
+  color: #fff;
+}
+
+.interests-inner ul {
+  margin-left: 20px;
+}
+
+.interests-inner li {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  list-style: square;
+}
+
+.interests-inner b {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.interests-inner > p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 
