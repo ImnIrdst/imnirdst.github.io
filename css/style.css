@@ -303,25 +303,30 @@ nav .brand-logo img {
 
 .resume-card-inner p{
   color: #727272;
-  line-height: 10px;
+  line-height: 20px;
 }
 
 .resume-card-element {
   margin-left: 5px;
-  line-height: 10px;
-  font-size: 15px;
+  line-height: 20px;
+  margin-top: 30px;
 }
 
 .resume-card-element-title{
   font-size: 18px;
   font-weight: 700;
+  margin: 3px;
+}
+
+.resume-link:hover {
+  color: black;
 }
 
 .resume-card-element-subtitle{
-
+  font-size: 15px;
+  font-weight: 400;
+  margin: 3px;
 }
-
-
 
 .gray-background {
   background-color: #fafafa;
