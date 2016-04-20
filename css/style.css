@@ -245,11 +245,10 @@ nav .brand-logo img {
   width: 100%;
 }
 
-
 .personal-information>h3{
   margin-top: 0px;
   font-size: 24px;
-  font-weight: 600;  
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -261,7 +260,6 @@ nav .brand-logo img {
   margin-bottom: 12px;
   padding-bottom: 12px;
 }
-
 
 .resume-btn{
   margin-top: 160px;
@@ -358,6 +356,13 @@ nav .brand-logo img {
 }
 
 #interests{
+  display: inline;
+  padding: 60px 0;
+  float: left;
+  width: 100%;
+}
+
+#hobbies{
   display: inline;
   padding: 60px 0;
   float: left;
@@ -1033,6 +1038,7 @@ transition: background-color 0.5s ease-in-out;
 
 .footer-top-inner>p{
   color: #fff;
+  margin-left: 10px;
 }
 
 
@@ -1056,10 +1062,41 @@ transition: background-color 0.5s ease-in-out;
 
 
 .contact-form .input-label {
- /* color: #bbbbbb;*/
+  color: #bbbbbb;
   font-size: 15px;
   left: 0;
 }
+
+.contact-information{
+  display: inline;
+  float: left;
+  width: 100%;
+
+}
+
+.contact-information>h3{
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.contact-information ul li{
+  border-bottom: 1px solid #eeeeee;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.contact-information ul li a i {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
 
 
 input[type="text"],
