@@ -405,7 +405,14 @@ nav .brand-logo img {
 }
 
 
-#experience{  
+#acm-icpc {
+  display: inline;
+  padding: 60px 0;
+  float: left;
+  width: 100%;
+}
+
+#wrestling {
   display: inline;
   padding: 60px 0;
   float: left;
