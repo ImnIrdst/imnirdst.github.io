@@ -478,7 +478,7 @@ nav .brand-logo img {
 
 .reveal-title {
   color: #727272 !important;
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 
@@ -517,8 +517,21 @@ nav .brand-logo img {
   position: absolute;
 }
 
+.prev2 {
+  left: 3%;
+  margin-top: 15.5%;
+  position: absolute;
+}
 
-#edcuation{
+
+.next2{
+  right: 3%;
+  margin-top: 15.5%;
+  position: absolute;
+}
+
+
+#sharifcup {
   background-color: #fafafa;
   display: inline;
   padding: 60px 0;
@@ -527,14 +540,20 @@ nav .brand-logo img {
 }
 
 
-.education-inner{
+.sharifcup-inner {
   display: inline;
   float: left;
   width: 100%;
 }
 
+.sharifcup-inner .title{
+  margin-left: 20px;
+}
 
-
+.sharifcup-inner > p{
+  margin-left: 25px;
+  color: #727272;
+}
 /*--------------------*/
 /* PORTFOLIO */
 /*--------------------*/
@@ -699,7 +718,6 @@ transition: background-color 0.5s ease-in-out;
 
 
 #facts {
-  background-image: url("../img/home-img3.jpg");
   background-position: center center;
   background-size: 100% 100%;
   display: inline;
@@ -869,7 +887,7 @@ transition: background-color 0.5s ease-in-out;
 
 
 .prev2 {
-  left: -8%;
+  left: 4%;
   margin-top: 8.3%;
   position: absolute;
 }
@@ -878,9 +896,21 @@ transition: background-color 0.5s ease-in-out;
 .next2 {
   margin-top: 8.3%;
   position: absolute;
-  right: -6%;
+  right: 4%;
 }
 
+.prev3 {
+  left: -8%;
+  margin-top: 8.3%;
+  position: absolute;
+}
+
+
+.next3 {
+  margin-top: 8.3%;
+  position: absolute;
+  right: -6%;
+}
 
 /*--------------------*/
 /* BLOG */
@@ -1983,9 +2013,9 @@ textarea.materialize-textarea {
   .next {margin-top: 28%;}
   .prev1 {margin-top: 28%;}
   .next1 {margin-top: 28%;}
+  .prev2 {margin-top: 28%;}
+  .next2 {margin-top: 28%;}
   #portfolio-list .mix {height: 240px;}
-  .prev2 {margin-top: 24.5%;left: -12%;}
-  .next2 {margin-top: 24.5%;right: -8.5%;}
   .blog-post-content h2, .blog-post-content h2 a {font-size: 16px;}
   .card .card-content p {font-size: 13px;}
   .card .card-action a {margin-right: 0px;}
@@ -2059,12 +2089,12 @@ textarea.materialize-textarea {
   .next{margin-top: 49%;}
   .prev1 { margin-top: 49%;}
   .next1{margin-top: 49%;}
+  .prev2 { margin-top: 49%;}
+  .next2{margin-top: 49%;}
   .filter {margin-bottom: 5px;margin-right: 5px;}
   #portfolio-list .mix {height: 250px; margin-bottom: 15px; width: 100%;}
   .single-facts {margin-bottom: 25px;}
   .contact-map {height: 350px;margin-top: 30px;}
-  .prev2 { margin-top: 30.5%;}
-  .next2 {margin-top: 30.5%;}
   .design-info {text-align: center;width: 100%;margin-top: 15px;margin-bottom: 0px;}
   .copyright-info {text-align: center; width: 100%;margin-top: 5px;}
   .call-to-about {left: 43%;bottom: -165px;}
@@ -2101,10 +2131,10 @@ textarea.materialize-textarea {
   .next{margin-top: 55%;}
   .prev1 { margin-top: 55%;}
   .next1{margin-top: 55%;}
+  .prev2 { margin-top: 55%;}
+  .next2{margin-top: 55%;}
   .testimonial-img {margin-bottom: 15px;width: 100%;}
   .testimonial-content {padding-left: 15px;width: 100%;}
-  .prev2 { margin-top: 70%;}
-  .next2{margin-top: 70%;}
   .copyright-info { font-size: 12px;}
   .design-info {font-size: 13px;}
   .call-to-about {left: 40.7%;bottom: -145px;}
@@ -2123,14 +2153,14 @@ textarea.materialize-textarea {
   nav .brand-logo {  font-size: 1.1rem;}
   .home-title { font-size: 30px;}
   .experience-title { font-size: 14px;}
-  .reveal-title {font-size: 17px !important;}
+  .reveal-title {font-size: 15px !important;}
   .prev { margin-top: 57%;}
   .next{margin-top: 57%;}
   .prev1 { margin-top: 57%;}
   .next1{margin-top: 57%;}
+  .prev2 { margin-top: 57%;}
+  .next2{margin-top: 57%;}
   .testimonial-content p {font-size: 12px;}
-  .prev2 { margin-top: 77%;}
-  .next2{margin-top: 77%;}
   .call-to-about {bottom: -120px; left: 39%;}
   .up-btn {left: 39%;}
   .header-title {font-size: 16px;line-height: 30px;}
