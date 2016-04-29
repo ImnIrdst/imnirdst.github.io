@@ -154,7 +154,7 @@ nav .brand-logo img {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 38px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -1986,7 +1986,9 @@ textarea.materialize-textarea {
 /*--------------------*/
 /* RESPONSIVE STYLE */
 /*--------------------*/
-
+@media(max-width:1300px ){
+  .home-title{font-size: 60px}
+}
 
 @media(max-width:1199px ){
 
@@ -1998,16 +2000,14 @@ textarea.materialize-textarea {
   .prev2 {margin-top: 13.5%;}
   .next2 {margin-top: 13.5%;}
   .contact-map{height: 492px;}
-
-  
+  .call-to-about {left: 45.5%; bottom: 0px;}
+  .home-social-media{margin-top:0;}
+  .home-inner > p{margin-bottom: 0;}
 }
 
-
 @media(max-width:991px ){
-
   .home-inner {padding: 30px;}
   .home-title {font-size: 55px;}
-  .call-to-about {bottom: -95px;}
   .resume-btn { margin-top: 30px;}
   .prev {margin-top: 28%;}
   .next {margin-top: 28%;}
@@ -2020,7 +2020,7 @@ textarea.materialize-textarea {
   .card .card-content p {font-size: 13px;}
   .card .card-action a {margin-right: 0px;}
   .contact-map{height: 484px;}
-  .call-to-about {left: 45.5%;}
+  .call-to-about {left: 45.5%; bottom: -60px;}
   .up-btn {left: 45.5%;}
   .custom-nav li a { padding: 25px 20px;}
 
@@ -2028,7 +2028,6 @@ textarea.materialize-textarea {
 
 
 @media(max-width:767px ){
-
   nav .brand-logo img {height: 40px; margin-top: 12px;}
   .home-inner { padding: 10px;}
   .home-title {font-size: 35px;}
@@ -2066,22 +2065,26 @@ textarea.materialize-textarea {
 
 }
 
+@media (max-width: 550px) {
+  nav .brand-logo { font-size: 1.0rem; }
+}
+
 
 @media(max-width:480px ){
 
-  nav .brand-logo { font-size: 1.1rem; }
+  nav .brand-logo { font-size: 1.0rem; }
   nav .brand-logo img {height: 35px;margin-top: 12px;}
   .side-nav {width: 200px;}
   .side-nav a {height: 45px;line-height: 50px;}
   .home-inner { padding: 0;}
-  .home-title {font-size: 35px;}
+  .home-title {font-size: 35px; line-height: 40px !important;}
   .home-inner > p {font-size: 16px;}
   .about-inner-left {margin-bottom: 20px;}
   .about-inner-right > h3 { font-size: 20px;}
   .about-inner-right > p { font-size: 13px;}
   .personal-information > h3 {font-size: 20px;}
   .personal-information ul li {font-size: 13px;}
-  .title {font-size: 25px;line-height: 1; margin-bottom: 30px;}
+  .title {font-size: 25px;line-height: 1; margin-bottom: 35px;}
   .skill-inner p {font-size: 13px;line-height: 25px;}
   .skill-progress-bar span { font-size: 15px;}
   .experience-inner > p {font-size: 13px;line-height: 25px;}
@@ -2097,7 +2100,7 @@ textarea.materialize-textarea {
   .contact-map {height: 350px;margin-top: 30px;}
   .design-info {text-align: center;width: 100%;margin-top: 15px;margin-bottom: 0px;}
   .copyright-info {text-align: center; width: 100%;margin-top: 5px;}
-  .call-to-about {left: 43%;bottom: -165px;}
+  .call-to-about {left: 43%;bottom: -85px;}
   .up-btn {left: 43%;}
   .header-title { font-size: 20px;}
   .recent-img {height: 70px;width: 25%;}
@@ -2137,7 +2140,7 @@ textarea.materialize-textarea {
   .testimonial-content {padding-left: 15px;width: 100%;}
   .copyright-info { font-size: 12px;}
   .design-info {font-size: 13px;}
-  .call-to-about {left: 40.7%;bottom: -145px;}
+  .call-to-about {left: 40.7%;bottom: -85px;}
   .up-btn {left: 40.7%;}
   .personal-information > h3 {font-size: 18px;}
   .reply-btn {font-size: 12px;padding: 6px 8px;}
@@ -2161,7 +2164,7 @@ textarea.materialize-textarea {
   .prev2 { margin-top: 57%;}
   .next2{margin-top: 57%;}
   .testimonial-content p {font-size: 12px;}
-  .call-to-about {bottom: -120px; left: 39%;}
+  .call-to-about {bottom: -80px; left: 39%;}
   .up-btn {left: 39%;}
   .header-title {font-size: 16px;line-height: 30px;}
   .children {margin-left: 10px;}
