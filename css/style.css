@@ -326,6 +326,11 @@ nav .brand-logo img {
   margin: 3px;
 }
 
+.wrestling-honors{
+	border-top: solid 1px #b3b3b3;
+	padding-top: 25px
+}
+
 .gray-background {
   background-color: #fafafa;
 }
