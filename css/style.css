@@ -310,7 +310,14 @@ nav .brand-logo img {
   margin-top: 30px;
 }
 
+.resume-card-element-oneline {
+  margin-left: 5px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
 .resume-card-element-title{
+  color: #727272;
   font-size: 18px;
   font-weight: 700;
   margin: 3px;
