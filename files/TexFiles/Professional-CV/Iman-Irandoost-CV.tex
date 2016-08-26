@@ -1,0 +1,138 @@
+\documentclass[a4paper,pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+	
+	%WATERMARK TEST [**not part of a CV**]---------------
+	%\font\wm=''Baskerville:color=787878'' at 8pt
+	%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+	%{\wm 
+	%	\begin{textblock}{1}(0,0)
+	%		\rotatebox{-90}{\parbox{500mm}{
+	%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+	%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+	%		}
+	%	}
+	%	\end{textblock}
+	%}
+	
+	\pagestyle{empty} % non-numbered pages
+	
+	\font\fb=''[cmr10]'' %for use with \LaTeX command
+	
+	%--------------------TITLE-------------
+	\par{\centering
+		{\Huge \textsc{Iman Irandoost}
+		}\bigskip\par}
+	
+	%--------------------SECTIONS-----------------------------------
+	%Section: Personal Data
+	\section{Personal Data}
+	\begin{tabular}{rl}
+		\textsc{Address:}   & Isfahan University of Technology, Isfahan, Iran \\
+		\textsc{email:}     & \href{mailto:imn.irdst@gmail.com}{imn.irdst@gmail.com}\\
+		\textsc{website:}     & \href{https://imnirdst.github.io/}{imnirdst.github.io}\\
+		\textsc{Phone:}     & +98 939 5261668\\
+		\textsc{Date of Birth:} & September 22, 1994
+	\end{tabular}
+	
+	%Section: Work Experience at the top
+	\section{Research Interests}
+		\textbullet\textnormal{ Artificial Intelligence:}  \emph{\color{darkgray}\small Machine Learning, Pattern Recognition, Natural Language processing} \vspace{2 mm}  \\
+		\textbullet\textnormal{ Data Science:} \emph{\color{darkgray}\small Data Analysing, Data Mining, Data Visualization} \vspace{2 mm} \\
+		\textbullet\textnormal{ Human Computer Interaction:} \emph{\color{darkgray}\small UI/UX Design, Intelligent Interfaces} \vspace{2 mm} \\
+		\textbullet\textnormal{ Algorithms \& Data Structures:} \emph{\color{darkgray}\small Intelligent Transportation Systems, CSPs, Max Flow Problems} \vspace{2 mm} \\
+		\textbullet\textnormal{ Mathematics:} \emph{\color{darkgray}\small Combinatorics, Game Theory, Number Theory}
+
+	
+	%Section: Education
+	\section{Education}
+	\begin{tabular}{rl}	
+		{2013 - 2016} & {Isfahan University of Technology}\\
+					   & {\small B. Sc. of Software Engineering} \\
+				       & {\small GPA: 16.25/20}
+	\end{tabular}
+	
+	%Section: Scholarships and additional info
+	\section{Academic Experience}
+		\begin{tabular}{r|p{11cm}}
+			\emph{Research} & Department of Transportation Engineering, \emph{\color{darkgray}\small Isfahan UT} \\
+			\emph{Assistant}&\footnotesize{Research on Intelligent Transportation Systems, Under Supervision of Dr. M. Tamannaei,}\\
+			&\footnotesize{Spring 2016 - Current}\\
+							
+			\multicolumn{2}{c}{} \\
+			\emph{Instructor} & Introduction to Competitive Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2015}\\
+			\multicolumn{2}{c}{} \\
+			\emph{Teaching} & Design and Analysis of Algorithms, \emph{\color{darkgray}\small Isfahan UT, Spring 2015} \vspace{1 mm}\\
+			\emph{Assistant}& Advanced Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2014 and Spring 2015}\vspace{1 mm}\\
+							& Introduction to Programming, \emph{\color{darkgray}\small Isfahan UT, Fall 2014}\\
+		\end{tabular}
+	
+	
+	%Section: Languages
+	\section{Languages}
+	\begin{tabular}{rl}
+		\textsc{Italian:}&Mothertongue\\
+		\textsc{English:}&Fluent\\
+		\textsc{French:}&Basic Knowledge\\
+	\end{tabular}
+	
+	\section{Computer Skills}
+	\begin{tabular}{rl}
+		Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+		Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
+	\end{tabular}
+	
+	
+	%\newpage
+	%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+	
+	%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+	
+\end{document}
