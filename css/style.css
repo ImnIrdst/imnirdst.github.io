@@ -323,8 +323,13 @@ nav .brand-logo img {
   margin: 3px;
 }
 
+.resume-link{
+  color: #727272;
+}
+
 .resume-link:hover {
-  color: black;
+  color: #EE4532;
+  font-weight: 500;
 }
 
 .resume-card-element-subtitle{
