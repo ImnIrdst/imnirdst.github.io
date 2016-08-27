@@ -1,0 +1,237 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+% \addtolength{\voffset}{-2.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%-------------My Packages---------------
+\usepackage{fontawesome}
+\usepackage{layout}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	bottom=10mm
+}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%	\layout
+	%WATERMARK TEST [**not part of a CV**]---------------
+	%\font\wm=''Baskerville:color=787878'' at 8pt
+	%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+	%{\wm 
+	%	\begin{textblock}{1}(0,0)
+	%		\rotatebox{-90}{\parbox{500mm}{
+	%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+	%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+	%		}
+	%	}
+	%	\end{textblock}
+	%}
+	
+	\pagestyle{empty} % non-numbered pages
+	
+	\font\fb=''[cmr10]'' %for use with \LaTeX command
+	
+	%--------------------TITLE-------------
+	\par{\centering
+		{\Huge \textsc{Iman Irandoost}
+		}\bigskip\par}
+	
+	%--------------------SECTIONS-----------------------------------
+	%Section: Personal Data
+	\section{Personal Data}
+		\begin{tabular}{rl}
+			\textsc{Address:}   & Isfahan University of Technology, Isfahan, Iran \\
+			\textsc{email:}     & imn.irdst@gmail.com \href{mailto:imn.irdst@gmail.com}{\footnotesize \faExternalLink}\\
+			\textsc{Personal Website:}     & imnirdst.github.io \href{https://imnirdst.github.io/}{\footnotesize \faExternalLink}\\
+			\textsc{Phone:}     & +98 939 5261668\\
+			\textsc{Date of Birth:} & September 22nd, 1994
+		\end{tabular}
+	
+	%Section: Work Experience at the top
+	\section{Research Interests}
+		\textbullet\textnormal{ Artificial Intelligence:}  \emph{\color{darkgray}\small Machine Learning, Pattern Recognition, Natural Language processing} \vspace{1 mm}  \\
+		\textbullet\textnormal{ Data Science:} \emph{\color{darkgray}\small Data Analyzing, Data Mining, Data Visualization} \vspace{1 mm} \\
+		\textbullet\textnormal{ Human Computer Interaction:} \emph{\color{darkgray}\small UI/UX Design, Intelligent Interfaces} \vspace{1 mm} \\
+		\textbullet\textnormal{ Algorithms \& Data Structures:} \emph{\color{darkgray}\small Intelligent Transportation Systems, CSPs, Max Flow Problems} \vspace{1 mm} \\
+		\textbullet\textnormal{ Mathematics:} \emph{\color{darkgray}\small Combinatorics, Game Theory, Number Theory}
+	%Section: Education
+	\section{Education}
+		\begin{tabular}{rl}	
+			{2013 - 2016} & {Isfahan University of Technology}\\
+						   & {\small B. Sc. of Software Engineering} \\
+					       & {\small GPA: 16.25/20.00}
+		\end{tabular}
+	
+	%Section: Scholarships and additional info
+	\section{Experiences}
+		\begin{tabular}{r|p{11cm}}
+			\emph{Research} & Department of Transportation Engineering, \emph{\color{darkgray}\small Isfahan UT,\space\space Spring 2016-Current} \\
+			\emph{Assistant}&\footnotesize{Research on Intelligent Transportation Systems, Under Supervision of Dr. M. Tamannaei,}\\
+			\multicolumn{2}{c}{} \\
+			\emph{Instructor} & Introduction to Competitive Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2015}\\
+			\multicolumn{2}{c}{} \\
+			\emph{Teaching} & Design and Analysis of Algorithms, \emph{\color{darkgray}\small Isfahan UT, Spring 2015} \vspace{1 mm}\\
+			\emph{Assistant}& Advanced Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2014 and Spring 2015}\vspace{1 mm}\\
+							& Introduction to Programming, \emph{\color{darkgray}\small Isfahan UT, Fall 2014}\\
+			\multicolumn{2}{c}{} \\
+			\emph{Internship} & Farsiad. Co, \emph{\color{darkgray}\small Isfahan, Iran, Summer 2016}\\
+			&\footnotesize{Analyzing Big Data and providing meaningful, real-time and effective recommendations.}\\
+		\end{tabular}
+	
+	\section{Skills}
+		\textbullet\textnormal{ Programming Languages:}  \emph{\color{darkgray}\small Java, C++, {C\#}, Python, Javascript, HTML/CSS, SQL, PHP, Go}   \vspace{1 mm}  \\
+		\textbullet\textnormal{ Data Mining and Analyzing Tools:} \emph{\color{darkgray}\small  Python, R, Weka, IPython Notebook, R Studio, Microsoft Excel} \vspace{1 mm} \\
+		\textbullet\textnormal{ Development and Design Tools:} \emph{\color{darkgray}\small Git, JetBrains IDEs, Visual Studio, Android Studio, Axure RP, Photoshop}\vspace{1 mm} \\
+		\textbullet\textnormal{ Operating Systems:} \emph{\color{darkgray}\small Manjaro Linux, Ubuntu, Microsoft Windows} \vspace{1 mm} \\
+		\textbullet\textnormal{ Other:} \emph{\color{darkgray}\small IBM CPLEX, UDK Game Engine, Cry Game Engine, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}}	
+
+	\section{Languages}
+		\begin{tabular}{rl | rl}
+			\textsc{ Persian:}&\emph{\color{darkgray}Native proficiency}& \textsc{ Kurdish (Kurmanji):}&\emph{\color{darkgray}Native proficiency}\\
+			\textsc{ English:}&\emph{\color{darkgray}Professional working proficiency} & \textsc{ Arabic:}&\emph{\color{darkgray}Elementary proficiency}
+		\end{tabular}
+	\section{Honors and Awards}
+		\begin{tabular}{r|p{11cm}}
+			\textnormal{ACM} & {\small Ranked 14th Place in 39th ACM-ICPC Asia Tehran Regional with TiZii Team} 
+			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink} \\
+			
+			\textnormal{ICPC}& {\small Honorable Mention in 38th ACM-ICPC Asia Tehran Regional with TiZii Team} 
+			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
+			\multicolumn{2}{c}{} \\
+			
+			\textnormal{Online} & {\small Ranked 1st Place in IIPC 2015 Isfahan University with TiZii Team} 
+			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
+			
+			\textnormal{Programming}& {\small Ranked 4th Place in IIPC 2015 Amir Kabir UT with TiZii Team
+				\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}}\\
+			
+			\textnormal{Contests}& {\small Ranked 9th Place in IIPC 2015 Sharif UT with TiZii Team}
+			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
+			
+							& {\small Ranked 99th Among 1416 Participants in Indeed Prime Code Sprint 2015}
+							\href{https://www.hackerrank.com/indeed-prime-codesprint}{\footnotesize \faExternalLink} - 
+							\href{https://www.hackerrank.com/contests/indeed-prime-codesprint/leaderboard/10}{\footnotesize \faExternalLink}\\
+			\multicolumn{2}{c}{} \\
+			
+			\textnormal{Sharifcup} & {\small Ranked 2nd Place in Sharifcup 2015 Control Traffic League with iTiZ Team} 
+			\href{http://sharifcup.sharif.ir/#!p=1036}{\footnotesize \faExternalLink}\\
+			\multicolumn{2}{c}{} \\
+
+			\textnormal{Iranian ICPC} & {\small Ranked 3rd Place in Iranian ICPC Challenge 2015 with TiZii Team}
+			\href{http://icpc.sharif.edu/acmicpc15/challenge-tournament/}{\footnotesize \faExternalLink} \\
+			\multicolumn{2}{c}{} \\
+			
+			\textnormal{Online Judge} & {\small Ranked 237th Among About 210,000 Users In UVa Online Judge}
+			\href{https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=20&page=show_authorsrank&limit=50&limitstart=200}{\footnotesize \faExternalLink} \\
+			
+			\textnormal{Websites} & {\small In 97th Percentile of Algorithms Domain In HackerRank Website}
+			\href{https://www.hackerrank.com/imn_irdst}{\footnotesize \faExternalLink} \\
+			\multicolumn{2}{c}{} \\
+			
+			\textnormal{Konkoor} & {\small Ranked 281th Among About 500,000 Student In National University Entrance Exam in Math and Physics (a.k.a. Konkoor)}\\
+		\end{tabular}
+	\section{Projects}
+		\textbullet\textnormal{ Real-time Vehicle Detection System with Deep learning} \\
+		\emph{\color{darkgray}\small {\space\space\space}Developing a Real-time Vehicle Detection System with Deep learning Using Python, cv2, lasange, sklearn} \vspace{1 mm} 
+		
+		\textbullet\textnormal{ Business Project Management System Using Java EE and Spring Framework} \\
+		\emph{\color{darkgray}\small {\space\space\space}Developing a BPMS Using Java EE, Spring, Hibernate, Soap webservices, Quartz, JSF, Primefaces, ...} \vspace{1 mm}
+		
+		\textbullet\textnormal{ Attendance System Using Face Recognition over Web} \\
+		\emph{\color{darkgray}\small {\space\space\space}Developing an attendance System Using Face Recognition Using C\#, EmguCV, Soap Webservice, ...} \vspace{1 mm}
+		
+		\textbullet\textnormal{ Implementing Spam Detection with Naive Bayes on Android} \\
+		\emph{\color{darkgray}\small {\space\space\space}Implementing Spam Detection (Text Classification) with Naive Bayes on Android Using Java, Sqlite} \vspace{1 mm}
+		
+		\textbullet\textnormal{ Crew Scheduling in Iranian Railway Network} \\
+		\emph{\color{darkgray}\small {\space\space\space}Developing a Crew Scheduling System Using Java, BFS, Branch and Bound (Set Covering Problem) }\\
+		\emph{\color{darkgray}\small {\space\space\space}Under Supervision of Dr. Tamannaei} \vspace{1 mm}
+		
+		\textbullet\textnormal{ Simple Spreadsheet Windows Application Using Qt} \\
+		\emph{\color{darkgray}\small {\space\space\space}Developing Simple Spreadsheet Windows Application Using C++, Qt, OpenCV} \vspace{1 mm}
+	\section{Selected Academic Courses}
+		\begin{tabular}{ll}
+			Introduction to Programming & \emph{\color{darkgray}20.0/20.0 (Ranked 1st)} \\
+			
+			Advanced Programming & \emph{\color{darkgray}19.1/20.0 (Ranked 1st)}\\
+			
+			Data Structures & \emph{\color{darkgray}20.0/20.0 (Ranked 1st)} \\
+			
+			Design and Analysis of Algorithms & \emph{\color{darkgray}19.07/20.0}\\
+			
+			Artificial Intelligence & \emph{\color{darkgray}16.0/20.0 (Ranked 1st)} \\
+			
+			Human Computer Interaction & \emph{\color{darkgray}18.5/20.0}\\
+			
+			Automata Theory & \emph{\color{darkgray}18.1/20.0 (Ranked 2nd)}\\
+			
+			Combinatorics & \emph{\color{darkgray}17.75/20.0}\\
+			
+			Web Programming & \emph{\color{darkgray}19.12/20.0 (Ranked 2nd)}
+		\end{tabular}
+	\section{References}
+		\begin{tabular}{rrl}
+			Dr. Nader Karimi \href{https://scholar.google.com/citations?user=mZGNr2QAAAAJ&hl=en}{\footnotesize \faExternalLink} & Assistant Prof. at Isfahan UT 
+			& nader.karimi@cc.iut.ac.ir \href{mailto:nader.karimi@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
+			
+			Dr. Mehran Safayani \href{http://safayani.iut.ac.ir/}{\footnotesize \faExternalLink}& Assistant Prof. at Isfahan UT 
+			& safayani@cc.iut.ac.ir \href{mailto:safayani@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
+			
+			Dr. Mohammad Tamannaei \href{http://tamannaei.iut.ac.ir/}{\footnotesize \faExternalLink}& Assistant Prof. at Isfahan UT 
+			& m.tamannaei@cc.iut.ac.ir \href{mailto:m.tamannaei@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
+			
+			Mr. Alireza Norouzi \href{https://www.linkedin.com/in/alireza-norouzi-8ab293aa}{\footnotesize \faExternalLink} & B.Sc. Student at Isfahan UT 
+			& alireza0xn@gmail.com \href{mailto:alireza0xn@gmail.com}{\footnotesize \faExternalLink}\\
+		\end{tabular}
+			
+	%\newpage
+	%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+	
+	%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+	
+\end{document}
