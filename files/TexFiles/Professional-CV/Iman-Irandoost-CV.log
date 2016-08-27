@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.7.30)  26 AUG 2016 23:37
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.7.30)  27 AUG 2016 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,10 +702,6 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 TextBlockOrigin set to 0pt x 0pt
 )
 TextBlockOrigin set to 2mm x 0.65\paperheight 
-
-LaTeX Warning: Unused global option(s):
-    [pt].
-
 (./Iman-Irandoost-CV.aux)
 \openout1 = `Iman-Irandoost-CV.aux'.
 
@@ -861,6 +857,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 77.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 122.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 122.
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -878,24 +878,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 . - 'small caps'  (m/sc) with NFSS spec.:
 . <->"[Fontin-SmallCaps]/OT:mapping=tex-text;mapping=tex-text;"
 .................................................
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
 
+Overfull \hbox (26.0701pt too wide) in paragraph at lines 131--135
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./Iman-Irandoost-CV.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 22154 strings out of 493638
- 393644 string characters out of 6146796
- 416469 words of memory out of 5000000
- 25400 multiletter control sequences out of 15000+600000
- 4184 words of font info for 38 fonts, out of 8000000 for 9000
+ 22174 strings out of 493638
+ 393977 string characters out of 6146796
+ 417471 words of memory out of 5000000
+ 25409 multiletter control sequences out of 15000+600000
+ 6047 words of font info for 49 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
- 48i,9n,61p,10430b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,9n,62p,10430b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Iman-Irandoost-CV.pdf (1 page).
