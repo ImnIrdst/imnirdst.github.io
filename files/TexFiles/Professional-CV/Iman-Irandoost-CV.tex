@@ -33,7 +33,7 @@ ItalicFont = Fontin-Italic.otf
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
-% \addtolength{\voffset}{-2.3cm}
+ \addtolength{\voffset}{-0.5cm}
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
@@ -55,6 +55,63 @@ ItalicFont = Fontin-Italic.otf
 	total={170mm,257mm},
 	bottom=10mm
 }
+
+%-------------My Macros---------------
+\newcommand{\emgr}[1]{\textnormal{\textsubscript{\space}#1}}
+
+\newcommand{\interestItem}[2]{
+	\textbullet\textnormal{ #1: }\emph{\color{darkgray}\small #2}}
+
+\newcommand{\experianceTitle}[3]{
+	{#1, \emph{\color{darkgray}\small #2,\space\space #3}}}
+
+\newcommand{\experianceSubTitle}[1]{
+	{\emph{\footnotesize{\textsubscript{\space}\color{darkgray}{#1}}}}}
+
+\newcommand{\skillItem}[2]{
+	\textbullet\textnormal{ #1: }\emph{\color{darkgray}\small #2}}
+
+\newcommand{\langItem}[2]{
+	\textsc{ #1:}&\emph{\color{darkgray}#2}}
+
+\newcommand{\projectTitle}[1]{
+	\textbullet\textnormal{ #1}}
+
+\newcommand{\projectSubTitle}[1]{
+	\emph{\color{darkgray}\small {\space\space\space\space\space}#1}}
+
+\newcommand{\courseItem}[2]{
+	{#1}&\emph{\color{darkgray}{#2}}}
+
+\newcommand{\rankedfirst}{\emph{\footnotesize\color{darkgray}(Ranked 1st)}}
+
+\newcommand{\latexLogo}{
+	{\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}}
+
+\newcommand{\linkSign}{
+	{\footnotesize\space\faExternalLink}}
+
+\newcommand{\link}[1]{\href{#1}{\linkSign}}
+%-------------Links---------------
+\newcommand{\myEmailLink}{mailto:imn.irdst@gmail.com}
+\newcommand{\mySiteLink}{https://imnirdst.github.io/}
+
+\newcommand{\ICPCLink}{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}
+\newcommand{\IndeedPrimePage}{https://www.hackerrank.com/indeed-prime-codesprint}
+\newcommand{\IndeedPrimeRanks}{https://www.hackerrank.com/contests/indeed-prime-codesprint/leaderboard/10}
+\newcommand{\SharifcupLink}{http://sharifcup.sharif.ir/\#!p=1036}
+\newcommand{\ICPCChLink}{http://icpc.sharif.edu/acmicpc15/challenge-tournament/}
+\newcommand{\UVaLink}{https://uva.onlinejudge.org/index.php?option=com_onlinejudge\&Itemid=20\&page=show_authorsrank\&limit=50\&limitstart=200}
+\newcommand{\HackerRankLink}{https://www.hackerrank.com/imn_irdst}
+
+\newcommand{\drKarimiSite}{https://scholar.google.com/citations?user=mZGNr2QAAAAJ\&hl=en}
+\newcommand{\drKarimiEmail}{mailto:nader.karimi@cc.iut.ac.ir}
+
+\newcommand{\drSafayaniSite}{http://safayani.iut.ac.ir/}
+\newcommand{\drSafayaniEmail}{mailto:safayani@cc.iut.ac.ir}
+
+\newcommand{\drTamannaeiSite}{http://tamannaei.iut.ac.ir/}
+\newcommand{\drTamannaeiEmail}{mailto:m.tamannaei@cc.iut.ac.ir}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -86,147 +143,119 @@ ItalicFont = Fontin-Italic.otf
 	\section{Personal Data}
 		\begin{tabular}{rl}
 			\textsc{Address:}   & Isfahan University of Technology, Isfahan, Iran \\
-			\textsc{email:}     & imn.irdst@gmail.com \href{mailto:imn.irdst@gmail.com}{\footnotesize \faExternalLink}\\
-			\textsc{Personal Website:}     & imnirdst.github.io \href{https://imnirdst.github.io/}{\footnotesize \faExternalLink}\\
-			\textsc{Phone:}     & +98 939 5261668\\
+			\textsc{email:}     & imn.irdst@gmail.com \href{\myEmailLink}{\linkSign}\\
+			\textsc{Personal Website:}     & imnirdst.github.io \href{\mySiteLink}{\linkSign}\\
+			\textsc{Phone:}     & +98 939 526 1668\\
 			\textsc{Date of Birth:} & September 22nd, 1994
 		\end{tabular}
-	
 	%Section: Work Experience at the top
 	\section{Research Interests}
-		\textbullet\textnormal{ Artificial Intelligence:}  \emph{\color{darkgray}\small Machine Learning, Pattern Recognition, Natural Language processing} \vspace{1 mm}  \\
-		\textbullet\textnormal{ Data Science:} \emph{\color{darkgray}\small Data Analyzing, Data Mining, Data Visualization} \vspace{1 mm} \\
-		\textbullet\textnormal{ Human Computer Interaction:} \emph{\color{darkgray}\small UI/UX Design, Intelligent Interfaces} \vspace{1 mm} \\
-		\textbullet\textnormal{ Algorithms \& Data Structures:} \emph{\color{darkgray}\small Intelligent Transportation Systems, CSPs, Max Flow Problems} \vspace{1 mm} \\
-		\textbullet\textnormal{ Mathematics:} \emph{\color{darkgray}\small Combinatorics, Game Theory, Number Theory}
+		\interestItem{Artificial Intelligence}{Machine Learning, Pattern Recognition, Natural Language processing}\vspace{1 mm}\\
+		\interestItem{Data Science}{Data Analyzing, Data Mining, Data Visualization}\vspace{1 mm} \\
+		\interestItem{Human Computer Interaction}{UI/UX Design, Intelligent Interfaces}\vspace{1 mm} \\
+		\interestItem{Algorithms \& Data Structures}{Intelligent Transportation Systems, CSPs, Max Flow Problems}\vspace{1 mm}\\
+		\interestItem{Mathematics}{Combinatorics, Game Theory, Number Theory, Linear Algebra}
 	%Section: Education
 	\section{Education}
 		\begin{tabular}{rl}	
-			{2013 - 2016} & {Isfahan University of Technology}\\
-						   & {\small B. Sc. of Software Engineering} \\
-					       & {\small GPA: 16.25/20.00}
+			\textbf{2013 - 2016} & \textbf{\textit{Isfahan University of Technology}}\\
+						   & {\small \textbf{B. Sc.}\emgr{of Software Engineering}} \\
+						   & {\small \textbf{Thesis:}\emgr{Design of a Real-time Vehicle Detection System with Deep learning}} \\
+						   & {\small \textbf{Advisor:}\emgr{Dr. Nader Karimi}} \\
+					       & {\small \textbf{GPA:}\emgr{16.25/20.00}}
 		\end{tabular}
-	
 	%Section: Scholarships and additional info
 	\section{Experiences}
 		\begin{tabular}{r|p{11cm}}
-			\emph{Research} & Department of Transportation Engineering, \emph{\color{darkgray}\small Isfahan UT,\space\space Spring 2016-Current} \\
-			\emph{Assistant}&\footnotesize{Research on Intelligent Transportation Systems, Under Supervision of Dr. M. Tamannaei,}\\
+			\emph{Research} & \experianceTitle{Department of Transportation Engineering}{Isfahan UT}{Spring 2016-Current}\\
+%			\emph{Assistant}& \footnotesize{Research on Intelligent Transportation Systems, Under Supervision of Dr. M. Tamannaei}\\
+			\emph{Assistant}& \experianceSubTitle{Research on Intelligent Transportation Systems, Under Supervision of Dr. M. Tamannaei}\\
+			\multicolumn{2}{c}{}\\
+			
+			\emph{Teaching} & \experianceTitle{Design and Analysis of Algorithms}{Isfahan UT}{Spring 2015}\vspace{1 mm}\\
+			\emph{Assistant}& \experianceTitle{Advanced Programming}{Isfahan UT}{Spring 2014 and Spring 2015}\vspace{1 mm}\\
+							& \experianceTitle{Introduction to Programming}{Isfahan UT}{Fall 2014}\\
 			\multicolumn{2}{c}{} \\
-			\emph{Instructor} & Introduction to Competitive Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2015}\\
-			\multicolumn{2}{c}{} \\
-			\emph{Teaching} & Design and Analysis of Algorithms, \emph{\color{darkgray}\small Isfahan UT, Spring 2015} \vspace{1 mm}\\
-			\emph{Assistant}& Advanced Programming, \emph{\color{darkgray}\small Isfahan UT, Spring 2014 and Spring 2015}\vspace{1 mm}\\
-							& Introduction to Programming, \emph{\color{darkgray}\small Isfahan UT, Fall 2014}\\
-			\multicolumn{2}{c}{} \\
-			\emph{Internship} & Farsiad. Co, \emph{\color{darkgray}\small Isfahan, Iran, Summer 2016}\\
-			&\footnotesize{Analyzing Big Data and providing meaningful, real-time and effective recommendations.}\\
+			
+			\emph{Internship} &\experianceTitle{Farsiad. Co}{Isfahan, Iran}{Summer 2016}\\
+							  &\experianceSubTitle{Analyzing Big Data and providing meaningful, real-time and effective recommendations.}\\
+			\multicolumn{2}{c}{}\\
+			
+			\emph{Tutor} & \experianceTitle{Introduction to Competitive Programming}{Isfahan UT}{Spring 2015}\\
 		\end{tabular}
 	
 	\section{Skills}
-		\textbullet\textnormal{ Programming Languages:}  \emph{\color{darkgray}\small Java, C++, {C\#}, Python, Javascript, HTML/CSS, SQL, PHP, Go}   \vspace{1 mm}  \\
-		\textbullet\textnormal{ Data Mining and Analyzing Tools:} \emph{\color{darkgray}\small  Python, R, Weka, IPython Notebook, R Studio, Microsoft Excel} \vspace{1 mm} \\
-		\textbullet\textnormal{ Development and Design Tools:} \emph{\color{darkgray}\small Git, JetBrains IDEs, Visual Studio, Android Studio, Axure RP, Photoshop}\vspace{1 mm} \\
-		\textbullet\textnormal{ Operating Systems:} \emph{\color{darkgray}\small Manjaro Linux, Ubuntu, Microsoft Windows} \vspace{1 mm} \\
-		\textbullet\textnormal{ Other:} \emph{\color{darkgray}\small IBM CPLEX, UDK Game Engine, Cry Game Engine, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}}	
-
+		\skillItem{Programming Languages}{Java, C++, {C\#}, Python, Javascript, HTML/CSS, SQL, PHP, Go}\vspace{1 mm}\\
+		\skillItem{Data Mining and Analyzing Tools}{Python, R, Weka, IPython Notebook, R Studio, Microsoft Excel}\vspace{1 mm}\\
+		\skillItem{Development and Design Tools}{Git, JetBrains IDEs, Visual Studio, Android Studio, Axure RP, Photoshop}\vspace{1 mm}\\
+		\skillItem{Operating Systems}{Manjaro Linux, Ubuntu, Microsoft Windows}\vspace{1 mm}\\
+		\skillItem{Other}{IBM CPLEX, UDK Game Engine, Cry Game Engine, \latexLogo}\vspace{1 mm} 
 	\section{Languages}
 		\begin{tabular}{rl | rl}
-			\textsc{ Persian:}&\emph{\color{darkgray}Native proficiency}& \textsc{ Kurdish (Kurmanji):}&\emph{\color{darkgray}Native proficiency}\\
-			\textsc{ English:}&\emph{\color{darkgray}Professional working proficiency} & \textsc{ Arabic:}&\emph{\color{darkgray}Elementary proficiency}
+			\langItem{Persian}{Native proficiency} & \langItem{ Kurdish (Kurmanji)}{Native proficiency}\\
+			\langItem{ English}{Professional working proficiency} & \langItem{ Arabic}{Elementary proficiency}
 		\end{tabular}
 	\section{Honors and Awards}
 		\begin{tabular}{r|p{11cm}}
-			\textnormal{ACM} & {\small Ranked 14th Place in 39th ACM-ICPC Asia Tehran Regional with TiZii Team} 
-			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink} \\
-			
-			\textnormal{ICPC}& {\small Honorable Mention in 38th ACM-ICPC Asia Tehran Regional with TiZii Team} 
-			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
+			\textnormal{ACM} & {\small Ranked 14th Place in 39th ACM-ICPC Asia Tehran Regional with TiZii Team}\href{\ICPCLink}{\linkSign} \\
+			\textnormal{ICPC}& {\small Honorable Mention in 38th ACM-ICPC Asia Tehran Regional with TiZii Team}\href{\ICPCLink}{\linkSign}\\
 			\multicolumn{2}{c}{} \\
 			
-			\textnormal{Online} & {\small Ranked 1st Place in IIPC 2015 Isfahan University with TiZii Team} 
-			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
-			
-			\textnormal{Programming}& {\small Ranked 4th Place in IIPC 2015 Amir Kabir UT with TiZii Team
-				\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}}\\
-			
-			\textnormal{Contests}& {\small Ranked 9th Place in IIPC 2015 Sharif UT with TiZii Team}
-			\href{https://icpc.baylor.edu/ICPCID/AW4BCNUI7GGZ}{\footnotesize \faExternalLink}\\
-			
-							& {\small Ranked 99th Among 1416 Participants in Indeed Prime Code Sprint 2015}
-							\href{https://www.hackerrank.com/indeed-prime-codesprint}{\footnotesize \faExternalLink} - 
-							\href{https://www.hackerrank.com/contests/indeed-prime-codesprint/leaderboard/10}{\footnotesize \faExternalLink}\\
+			\textnormal{Online} & {\small Ranked 1st Place in IIPC 2015 Isfahan University with TiZii Team} \href{\ICPCLink}{\linkSign}\\
+			\textnormal{Programming} & {\small Ranked 4th Place in IIPC 2015 Amir Kabir UT with TiZii Team\href{\ICPCLink}{\linkSign}}\\
+			\textnormal{Contests} & {\small Ranked 9th Place in IIPC 2015 Sharif UT with TiZii Team}\href{\ICPCLink}{\linkSign}\\
+								  & {\small Ranked 99th Among 1416 Participants in Indeed Prime Code Sprint 2015}\href{\IndeedPrimePage}{\linkSign}{ - }\href{\IndeedPrimeRanks}{\linkSign}\\
 			\multicolumn{2}{c}{} \\
 			
-			\textnormal{Sharifcup} & {\small Ranked 2nd Place in Sharifcup 2015 Control Traffic League with iTiZ Team} 
-			\href{http://sharifcup.sharif.ir/#!p=1036}{\footnotesize \faExternalLink}\\
+			\textnormal{Sharifcup} & {\small Ranked 2nd Place in Sharifcup 2015 Control Traffic League with iTiZ Team}\href{\SharifcupLink}{\linkSign}\\
 			\multicolumn{2}{c}{} \\
 
-			\textnormal{Iranian ICPC} & {\small Ranked 3rd Place in Iranian ICPC Challenge 2015 with TiZii Team}
-			\href{http://icpc.sharif.edu/acmicpc15/challenge-tournament/}{\footnotesize \faExternalLink} \\
+			\textnormal{ICPC Challenge} & {\small Ranked 3rd Place in Iranian ICPC Challenge 2015 with TiZii Team}\href{\ICPCChLink}{\linkSign} \\
 			\multicolumn{2}{c}{} \\
 			
-			\textnormal{Online Judge} & {\small Ranked 237th Among About 210,000 Users In UVa Online Judge}
-			\href{https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=20&page=show_authorsrank&limit=50&limitstart=200}{\footnotesize \faExternalLink} \\
-			
-			\textnormal{Websites} & {\small In 97th Percentile of Algorithms Domain In HackerRank Website}
-			\href{https://www.hackerrank.com/imn_irdst}{\footnotesize \faExternalLink} \\
+			\textnormal{Online Judge} & {\small Ranked 237th Among About 210,000 Users In UVa Online Judge}\href{\UVaLink}{\linkSign} \\
+			\textnormal{Websites} & {\small 97th Percentile of Algorithms Domain In HackerRank Website}\href{\HackerRankLink}{\linkSign} \\
 			\multicolumn{2}{c}{} \\
 			
-			\textnormal{Konkoor} & {\small Ranked 281th Among About 500,000 Student In National University Entrance Exam in Math and Physics (a.k.a. Konkoor)}\\
+			\textnormal{Konkoor} & {\small Ranked 281st Among About 500,000 Student In National University Entrance Exam in Math and Physics (a.k.a. Konkoor)}\\
+			
+			\multicolumn{2}{c}{} \\
+			\textnormal{Wrestling} & {\small Bronze Medal In National University Wrestling Championships 2015 Regionals}\\
 		\end{tabular}
 	\section{Projects}
-		\textbullet\textnormal{ Real-time Vehicle Detection System with Deep learning} \\
-		\emph{\color{darkgray}\small {\space\space\space}Developing a Real-time Vehicle Detection System with Deep learning Using Python, cv2, lasange, sklearn} \vspace{1 mm} 
+		\projectTitle{ Real-time Vehicle Detection System with Deep learning} \\
+		\projectSubTitle{Developing a Real-time Vehicle Detection System with Deep learning Using Python, cv2, lasange, sklearn} \vspace{1 mm} 
 		
-		\textbullet\textnormal{ Business Project Management System Using Java EE and Spring Framework} \\
-		\emph{\color{darkgray}\small {\space\space\space}Developing a BPMS Using Java EE, Spring, Hibernate, Soap webservices, Quartz, JSF, Primefaces, ...} \vspace{1 mm}
+		\projectTitle{ Business Project Management System Using Java EE and Spring Framework} \\
+		\projectSubTitle{Developing a BPMS Using Java EE, Spring, Hibernate, Soap webservices, Quartz, JSF, Primefaces, ...} \vspace{1 mm}
 		
-		\textbullet\textnormal{ Attendance System Using Face Recognition over Web} \\
-		\emph{\color{darkgray}\small {\space\space\space}Developing an attendance System Using Face Recognition Using C\#, EmguCV, Soap Webservice, ...} \vspace{1 mm}
+		\projectTitle{ Attendance System Using Face Recognition over Web} \\
+		\projectSubTitle{Developing an attendance System Using Face Recognition Using C\#, EmguCV, Soap Webservice, ...} \vspace{1 mm}
 		
-		\textbullet\textnormal{ Implementing Spam Detection with Naive Bayes on Android} \\
-		\emph{\color{darkgray}\small {\space\space\space}Implementing Spam Detection (Text Classification) with Naive Bayes on Android Using Java, Sqlite} \vspace{1 mm}
+		\projectTitle{ Crew Scheduling in Iranian Railway Network} \\
+		\projectSubTitle{Developing a Crew Scheduling System Using Java, BFS, Branch and Bound (Set Covering Problem)}\\
+		\projectSubTitle{Under Supervision of Dr. Tamannaei} \vspace{1 mm}
 		
-		\textbullet\textnormal{ Crew Scheduling in Iranian Railway Network} \\
-		\emph{\color{darkgray}\small {\space\space\space}Developing a Crew Scheduling System Using Java, BFS, Branch and Bound (Set Covering Problem) }\\
-		\emph{\color{darkgray}\small {\space\space\space}Under Supervision of Dr. Tamannaei} \vspace{1 mm}
-		
-		\textbullet\textnormal{ Simple Spreadsheet Windows Application Using Qt} \\
-		\emph{\color{darkgray}\small {\space\space\space}Developing Simple Spreadsheet Windows Application Using C++, Qt, OpenCV} \vspace{1 mm}
+		\projectTitle{ Implementing Spam Detection with Na{\"\i}ve Bayes on Android} \\
+		\projectSubTitle{Implementing Spam Detection (Text Classification) with Naive Bayes on Android Using Java, Sqlite} \vspace{1 mm}
 	\section{Selected Academic Courses}
-		\begin{tabular}{ll}
-			Introduction to Programming & \emph{\color{darkgray}20.0/20.0 (Ranked 1st)} \\
-			
-			Advanced Programming & \emph{\color{darkgray}19.1/20.0 (Ranked 1st)}\\
-			
-			Data Structures & \emph{\color{darkgray}20.0/20.0 (Ranked 1st)} \\
-			
-			Design and Analysis of Algorithms & \emph{\color{darkgray}19.07/20.0}\\
-			
-			Artificial Intelligence & \emph{\color{darkgray}16.0/20.0 (Ranked 1st)} \\
-			
-			Human Computer Interaction & \emph{\color{darkgray}18.5/20.0}\\
-			
-			Automata Theory & \emph{\color{darkgray}18.1/20.0 (Ranked 2nd)}\\
-			
-			Combinatorics & \emph{\color{darkgray}17.75/20.0}\\
-			
-			Web Programming & \emph{\color{darkgray}19.12/20.0 (Ranked 2nd)}
+		\begin{tabular}{llll}
+			\courseItem{Introduction to Programming}{20.0/20.0}&\courseItem{Artificial Intelligence \rankedfirst}{16.0/20.0}\\
+			\courseItem{Advanced Programming}{19.1/20.0}&\courseItem{Human Computer Interaction}{18.5/20.0}\\
+			\courseItem{Data Structures}{20.0/20.0}&\courseItem{Automata Theory}{18.1/20.0}\\
+			\courseItem{Design and Analysis of Algorithms}{19.1/20.0}&\courseItem{Web Programming}{19.1/20.0}\\
+			\courseItem{Combinatorics}{17.8/20.0}&&
 		\end{tabular}
+	\section{Hobbies}
+		{\hspace{1 mm} Programming, Wrestling, Swimming, Football, Basketball, Reading Inspirational  Books}\\% \\ Listening to Music and Podcasts,\\  
 	\section{References}
-		\begin{tabular}{rrl}
-			Dr. Nader Karimi \href{https://scholar.google.com/citations?user=mZGNr2QAAAAJ&hl=en}{\footnotesize \faExternalLink} & Assistant Prof. at Isfahan UT 
-			& nader.karimi@cc.iut.ac.ir \href{mailto:nader.karimi@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
-			
-			Dr. Mehran Safayani \href{http://safayani.iut.ac.ir/}{\footnotesize \faExternalLink}& Assistant Prof. at Isfahan UT 
-			& safayani@cc.iut.ac.ir \href{mailto:safayani@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
-			
-			Dr. Mohammad Tamannaei \href{http://tamannaei.iut.ac.ir/}{\footnotesize \faExternalLink}& Assistant Prof. at Isfahan UT 
-			& m.tamannaei@cc.iut.ac.ir \href{mailto:m.tamannaei@cc.iut.ac.ir}{\footnotesize \faExternalLink}\\
-			
-			Mr. Alireza Norouzi \href{https://www.linkedin.com/in/alireza-norouzi-8ab293aa}{\footnotesize \faExternalLink} & B.Sc. Student at Isfahan UT 
-			& alireza0xn@gmail.com \href{mailto:alireza0xn@gmail.com}{\footnotesize \faExternalLink}\\
+		\begin{tabular}{ll}
+			\textbf{Dr. Nader Karimi}\link{\drKarimiSite} 			& \textbf{\hspace{10 mm}Dr. Mohammad Tamannaei}\link{\drTamannaeiSite} \\ %& \\
+			Assistant Professor  									& \hspace{10 mm}Assistant Professor \\ % & Assistant Professor\\
+			Electrical \& Computer Engineering Dept.				& \hspace{10 mm}Transportation Engineering Dept. \\% &  Transportation Engineering Dept.
+			Isfahan University of Technology 						& \hspace{10 mm}Isfahan University of Technology\\
+			Email: nader.karimi@cc.iut.ac.ir\link{\drKarimiEmail} 	& \hspace{10 mm}Email: m.tamannaei@cc.iut.ac.ir \link{\drTamannaeiEmail} \\
+			Phone: +98 313 391 5025									& \hspace{10 mm}Phone: +98 313 391 1400			
 		\end{tabular}
 			
 	%\newpage

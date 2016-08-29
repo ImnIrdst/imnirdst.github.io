@@ -211,5 +211,9 @@ jQuery(function($){
         'slow');
 	});
 
-	
+
 });
+
+function initialScroll(){
+	window.scrollTo(0, pageYOffset+1);
+}

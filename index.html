@@ -20,10 +20,10 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 	<!-- Font -->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body onload="initialScroll()">
 	<!-- BEGIN PRELOADER -->
 	<!--
       <div id="preloader">        
@@ -82,7 +82,7 @@
 
 									<img class="profile-img" src="img/profile-img3.jpg" alt="Profile Image" />
 									<h1 class="home-title">HI! I'm <span>IMAN IRANDOOST</span></h1>
-									<p>I'm a bachelor software engineering student in Isfahan University of technology</p>
+									<p>I'm a software engineering student in Isfahan University of technology</p>
 
 									<div class="home-social-media">
 										<a href="https://www.facebook.com/iman.irandoust"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -99,30 +99,33 @@
 					</div>
 				</div>
 			</section>
-			<!-- START ABOUT SECTION -->
-			<section id="about">
-				<div class="container">
-					<div class="row">
-						<div class="col s12">
-							<div class="about-inner">
-								<div class="row">
-									<div class="col s16">
-										<div class="about-inner-right">
-											<h3>About Me</h3>
-											<p style="width: 78%">I'm a bachelor software engineering student in Isfahan University of Technology and a member of IUT Freestyle Wrestling Team. I'm very passionate about programming, data analysing, artificial intelligence and Human Computer Interaction.</p>
-											<div class="personal-information col s12 m12 l6">
-												<h3>Personal Information</h3>
-												<ul>
-													<li><span>Name : </span>Iman Irandoost</li>
-													<li><span>Phone : </span>+989395261668</li>
-													<li><span>Email : </span>imn.irdst@gmail.com</li>
-													<li><span>Date of Birth : </span>September 22, 1994</li>
-												</ul>
-											</div>
-											<div class="resume-download col s12 m12 l6">
-												<a href="files/TexFiles/Professional-CV/Iman-Irandoost-CV.pdf" class="waves-effect waves-light btn-large resume-btn">
-													<i class="mdi-content-archive left"></i> Download CV
-												</a>
+			<!-- Start Resume -->
+			<section id="resume">
+				<!-- START ABOUT SECTION -->
+				<section id="about">
+					<div class="container">
+						<div class="row">
+							<div class="col s12">
+								<div class="about-inner">
+									<div class="row">
+										<div class="col s16">
+											<div class="about-inner-right">
+												<h3>About Me</h3>
+												<p style="width: 78%">I'm a bachelor software engineering student in Isfahan University of Technology and a member of IUT Freestyle Wrestling Team. I'm very passionate about programming, data analysing, artificial intelligence and Human Computer Interaction.</p>
+												<div class="personal-information col s12 m12 l6">
+													<h3>Personal Information</h3>
+													<ul>
+														<li><span>Name : </span>Iman Irandoost</li>
+														<li><span>Phone : </span>+989395261668</li>
+														<li><span>Email : </span>imn.irdst@gmail.com</li>
+														<li><span>Date of Birth : </span>September 22, 1994</li>
+													</ul>
+												</div>
+												<div class="resume-download col s12 m12 l6">
+													<a href="files/TexFiles/Professional-CV/Iman-Irandoost-CV.pdf" class="waves-effect waves-light btn-large resume-btn">
+														<i class="mdi-content-archive left"></i> Download CV
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -130,25 +133,22 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!-- Start Interests -->
-			<section id="interests">
-				<div class="container">
-					<div class="interests-inner">
-						<h2 class="title">Research Interests</h2>
-						<ul style="list-style-type: decimal;">
-							<li><b>Artificial Intelligence:</b> Machine Learning, Pattern Recognition, Natural Language processing</li>
-							<li><b>Data Science:</b> Data Analyzing, Data Mining, Data Visualization</li>
-							<li><b>Human Computer Interaction:</b> UI/UX Design, Intelligent Interfaces</li>
-							<li><b>Algorithms & Data structures:</b> Constraint Satisfaction Problems, Intelligent Transportation Systems, Max Flow Problems</li>
-							<li><b>Mathematics:</b> Combinatorics, Game Theory, Number Theory</li>
-						</ul>
+				</section>
+				<!-- Start Interests -->
+				<section id="interests">
+					<div class="container">
+						<div class="interests-inner">
+							<h2 class="title">Research Interests</h2>
+							<ul style="list-style-type: decimal;">
+								<li><b>Artificial Intelligence:</b> Machine Learning, Pattern Recognition, Natural Language processing</li>
+								<li><b>Data Science:</b> Data Analyzing, Data Mining, Data Visualization</li>
+								<li><b>Human Computer Interaction:</b> UI/UX Design, Intelligent Interfaces</li>
+								<li><b>Algorithms & Data structures:</b> Constraint Satisfaction Problems, Intelligent Transportation Systems, Max Flow Problems</li>
+								<li><b>Mathematics:</b> Combinatorics, Game Theory, Number Theory, Linear Algebra</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</section>
-			<!-- Start Resume -->
-			<section id="resume">
+				</section>
 				<!--Start Education-->
 				<section class="resume-card white-background">
 					<div class="container">
@@ -159,7 +159,8 @@
 								<p class="resume-card-element-title">[2013 - 2017] </p>
 								<p class="resume-card-element-title">Isfahan University of Technology </p>
 								<p class="resume-card-element-subtitle">B.Sc. of Computer Engineering, Software field</p>
-								<p class="resume-card-element-subtitle">GPA: 16.30/20.00</p>
+								<p class="resume-card-element-subtitle">Thesis: Design of a Real-time Vehicle Detection System with Deep learning</p>
+								<p class="resume-card-element-subtitle">GPA: 16.25/20.00</p>
 							</div>
 						</div>
 					</div>
@@ -176,11 +177,6 @@
 								<p class="resume-card-element-subtitle">Spring 2016 - Present</p>
 							</div>
 							<div class="resume-card-element">
-								<p class="resume-card-element-title">Instructor, Introduction to Competitive Programming</p>
-								<p class="resume-card-element-subtitle">Isfahan University of Technology</p>
-								<p class="resume-card-element-subtitle">Spring 2016</p>
-							</div>
-							<div class="resume-card-element">
 								<p class="resume-card-element-title">Teaching Assistant, Design and Analysis of Algorithms</p>
 								<p class="resume-card-element-subtitle">Isfahan University of Technology</p>
 								<p class="resume-card-element-subtitle">Spring 2015</p>
@@ -194,6 +190,11 @@
 								<p class="resume-card-element-title">Teaching Assistant, Introduction to Programming</p>
 								<p class="resume-card-element-subtitle">Isfahan University of Technology</p>
 								<p class="resume-card-element-subtitle">Fall 2014</p>
+							</div>
+							<div class="resume-card-element">
+								<p class="resume-card-element-title">Tutor, Introduction to Competitive Programming</p>
+								<p class="resume-card-element-subtitle">Isfahan University of Technology</p>
+								<p class="resume-card-element-subtitle">Spring 2016</p>
 							</div>
 						</div>
 					</div>
@@ -221,7 +222,7 @@
 							</div>
 							<div class="resume-card-element">
 								<p class="resume-card-element-title">Other Software</p>
-								<p class="resume-card-element-subtitle">UDK Game Engine, Cry Game Engine, LaTeX
+								<p class="resume-card-element-subtitle">IBM Cplex, UDK Game Engine, Cry Game Engine, LaTeX
 							</div>
 						</div>
 					</div>
@@ -305,10 +306,10 @@
 								<p class="resume-card-element-title">National University Entrance Exam in Math and Physics</p>
 								<p class="resume-card-element-subtitle">Ranked 281th Among About 500,000 Student</p>
 							</div>
-							<div class="resume-card-element wrestling-honors">
+							<div class="resume-card-element">
 								<p class="resume-card-element-title">Freestyle Wrestling</p>
 								<a href="gallery.html#wrestling">
-									<p class="resume-card-element-subtitle resume-link">Bronze Medal In National University Wrestling Championships 2015 Regionals</p>
+									<p class="resume-card-element-subtitle resume-link">Bronze Medal In National University Wrestling Championships 2015 Regionals (86kg)</p>
 								</a>
 							</div>
 						</div>
@@ -458,7 +459,7 @@
 		</main>
 	</div>
 	<!-- jQuery Library -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<!-- Materialize js -->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<!-- Skill Progress Bar -->
@@ -467,7 +468,7 @@
 	<!-- Owl slider -->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Mixit slider  -->
-	<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
 	<!-- counter -->
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.counterup.min.js"></script>
