@@ -10,6 +10,7 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
+% \usepackage{textcomp} 					%registered trademark
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -75,6 +76,9 @@ ItalicFont = Fontin-Italic.otf
 
 \newcommand{\langItem}[2]{
 	\textsc{ #1:}&\emph{\color{darkgray}#2}}
+
+\newcommand{\TestItem}[2]{
+	{ #1: }\emph{\color{darkgray}#2}}
 
 \newcommand{\projectTitle}[1]{
 	\textbullet\textnormal{ #1}}
@@ -246,11 +250,14 @@ ItalicFont = Fontin-Italic.otf
 		\skillItem{Operating Systems}{Manjaro Linux, Ubuntu, Microsoft Windows}\vspace{1 mm}\\
 		\skillItem{Other}{IBM CPLEX, UDK Game Engine, Cry Game Engine, \latexLogo}\vspace{1 mm}
 	 
-	\section{Languages}
+	\section{Languages and Tests}
 		 \begin{tabular}{rl  rl}
 		 	\langItem{Persian}{Native proficiency} & \langItem{ Kurdish}{Native proficiency}\\
-		 	\langItem{ English}{Professional working proficiency} & \langItem{ Arabic}{Elementary proficiency}\\\\
+		 	\langItem{ English}{Professional working proficiency} & \langItem{ Arabic}{Elementary proficiency}\\
 		 \end{tabular}
+
+		 \hspace{1pt}\TestItem{ TOEFL iBT}{ 103 (Reading: 29, Listening: 26, Speaking: 20, Writing: 28)}
+	
 	\section{Hobbies}
 		{\hspace{1 mm} Programming, Wrestling, Swimming, Football, Basketball, Reading Inspirational  Books}\\\\% \\ Listening to Music and Podcasts,\\  
 	\section{References}
