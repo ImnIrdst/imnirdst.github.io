@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.11.21)  23 NOV 2016 16:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.11.21)  13 DEC 2016 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,6 +938,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 153.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 153.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
+
+ []
 
 
 LaTeX Font Warning: Font shape `EU1/Fontin.otf(0)/bx/it' undefined
