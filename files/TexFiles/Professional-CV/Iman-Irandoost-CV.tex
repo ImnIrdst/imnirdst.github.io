@@ -86,6 +86,10 @@ ItalicFont = Fontin-Italic.otf
 \newcommand{\projectSubTitle}[1]{
 	\emph{\color{darkgray}\small {\space\space\space\space\space}#1}}
 
+\newcommand{\opensourceProjectSubTitle}[2]{
+	\emph{\color{black}\small {\space\space\space\space\space}#1}{\emph{\color{darkgray}\small {#2}}}}
+
+
 \newcommand{\courseItem}[2]{
 	{#1}&\emph{\color{darkgray}{#2}}}
 
@@ -111,6 +115,15 @@ ItalicFont = Fontin-Italic.otf
 \newcommand{\HackerRankLink}{https://www.hackerrank.com/imn_irdst}
 
 \newcommand{\farsiadLink}{http://farsiad.com/}
+
+\newcommand{\twitterProject}{https://github.com/ImnIrdst/Clustering-Customer-Complaints-Twitter-2016}
+\newcommand{\VRPProject}{https://github.com/ImnIrdst/VRP-Branch-and-Bound-2016}
+\newcommand{\DeepLearningProject}{https://github.com/ImnIrdst/Sharif-Cup-2015-TiZii}
+\newcommand{\BPMSProject}{https://github.com/ImnIrdst/VRP-Branch-and-Bound-2016}
+\newcommand{\SpamDetectionProject}{https://github.com/ImnIrdst/Spam-Detection-on-Android-2015}
+
+\newcommand{\BestoonProject}{https://github.com/jadijadi/bestoon}
+\newcommand{\StanfordCheatSheetProject}{https://github.com/jaehyunp/stanfordacm}
 
 \newcommand{\drKarimiSite}{https://scholar.google.com/citations?user=mZGNr2QAAAAJ\&hl=en}
 \newcommand{\drKarimiEmail}{mailto:nader.karimi@cc.iut.ac.ir}
@@ -170,7 +183,7 @@ ItalicFont = Fontin-Italic.otf
 						   & {\small \textbf{B. Sc.}\emgr{of Software Engineering}} \\
 						   & {\small \textbf{Thesis:}\emgr{Design of a Real-time Vehicle Detection System using Deep learning}} \\
 						   & {\small \textbf{Advisor:}\emgr{Dr. Nader Karimi}} \\
-					       & {\small \textbf{GPA:}\emgr{16.3/20.0 (3.4/4.0)}}
+					       & {\small \textbf{GPA:}\emgr{16.37/20.0 (3.4/4.0)}}
 		\end{tabular}
 	\section{Relevant Academic Courses}
 		\begin{tabular}{llll}
@@ -230,33 +243,38 @@ ItalicFont = Fontin-Italic.otf
 			
 			\emph{Tutor} & \experianceTitle{Introduction to Competitive Programming}{Isfahan UT}{Spring 2015}\\
 		\end{tabular}
+		
 	\section{Projects}
-		\projectTitle{ Analyzing Customer Complaints on Twitter} \\
+		\projectTitle{ Analyzing Customer Complaints on Twitter}\href{\twitterProject}{\linkSign}\\
 		\projectSubTitle{Clustering Critical Tweets about a Brand to identify most Reliable and Important ones using Data Mining,} \\
 		\projectSubTitle{Sentiment Analysis and CRM Techniques, Under Supervision of Dr. Mirzaei and Dr. Noorbehbahani} \vspace{1 mm} 
 		
-		\projectTitle{ Supply Chain Scheduling with Tardiness and Routing Problem} \\
+		\projectTitle{ Supply Chain Scheduling with Tardiness and Routing Problem} \href{\VRPProject}{\linkSign} \\
 		\projectSubTitle{Proposing a Mathematical Model and Providing three Solutions using Branch and Bound, Beam Search and }\\
 		\projectSubTitle{Genetic Algorithms for the Problem, Under Supervision of Dr. Tamannaei and Dr. Rasti-Barzoki}\vspace{1 mm}
 		
-		\projectTitle{ Real-time Vehicle Detection System using Deep learning} \\
+		\projectTitle{ Real-time Vehicle Detection System using Deep learning} \href{\DeepLearningProject}{\linkSign} \\
 		\projectSubTitle{Developing a Real-time Vehicle Detection System using Deep learning, Python, cv2, lasange, sklearn}\\
 		\projectSubTitle{Under Supervision of Dr. Nader Karimi}\vspace{1 mm}
 		
-		\projectTitle{ Business Project Management System using Java EE and Spring Framework} \\
+		\projectTitle{ Business Project Management System using Java EE and Spring Framework} \href{\BPMSProject}{\linkSign} \\
 		\projectSubTitle{Developing a BPMS using Java EE, Spring, Hibernate, Soap webservices, Quartz, JSF, Primefaces, ...} \vspace{1 mm}
 		
 		\projectTitle{ Attendance System using Face Recognition over Web} \\
 		\projectSubTitle{Developing an attendance System by Face Recognition using C\#, EmguCV, Soap Webservice, ...} \vspace{1 mm}
-		
 
-		\projectTitle{ Spam Detection on Android Platform} \\
+		\projectTitle{ Spam Detection on Android Platform} \href{\SpamDetectionProject}{\linkSign} \\
 		\projectSubTitle{Implementing Spam Detection (Text Classification) with Naive Bayes on Android using Java, Sqlite} \vspace{1 mm}
+		
+		\projectTitle{ Open Source Projects }  \\
+		\opensourceProjectSubTitle{Bestoon:}{ A simple Income and Expense system  \href{\BestoonProject}{\linkSign} }\\ %\href{https://github.com/jadijadi}{@jadijadi}
+		\opensourceProjectSubTitle{Stanford ACM-ICPC:}{ Stanford ACM-ICPC related materials \href{\StanfordCheatSheetProject}{\linkSign}} \vspace{1 mm}
 	\section{Skills}
 		\skillItem{Programming Languages}{Java, C++, {C\#}, Python, Javascript, HTML/CSS, Less, SQL, PHP, Go}\vspace{1 mm}\\
 		\skillItem{Frameworks \& Libraries}{Node.js, Express, AngularJs, Ionic, Cordova, Spring Framework, Django}\vspace{1 mm}\\
-		\skillItem{Data Mining and Analyzing Tools}{Python, R, Weka, IPython Notebook, R Studio, Microsoft Excel}\vspace{1 mm}\\
 		\skillItem{Development and Design Tools}{Git, JetBrains IDEs, Visual Studio, Android Studio, Photoshop}\vspace{1 mm}\\
+		\skillItem{Databases}{PostgreSQLl, SQL Server, MySQL, MongoDB, Redis, SQLite}\vspace{1 mm}\\
+		\skillItem{Data Mining and Analyzing Tools}{Python, R, Weka, IPython Notebook, R Studio}\vspace{1 mm}\\
 		\skillItem{Operating Systems}{Ubuntu, Manjaro Linux, Microsoft Windows}\vspace{1 mm}\\
 		\skillItem{Other}{IBM CPLEX, SPSS, Minitab, UDK Game Engine, Cry Game Engine, \latexLogo}\vspace{1 mm}
 	 
@@ -269,8 +287,8 @@ ItalicFont = Fontin-Italic.otf
 		 \hspace{1pt}\TestItem{ TOEFL iBT}{ 103 (Reading: 29, Listening: 26, Speaking: 20, Writing: 28)}
 	\section{Hobbies}
 		{\hspace{1 mm} Programming, Wrestling, Swimming, Football, Basketball, Reading Inspirational  Books}\\% \\ Listening to Music and Podcasts,\\  
-	\section{References}
-		{\hspace{1 mm} Available upon request}
+%	\section{References}
+%		{\hspace{1 mm} Available upon request}
 			
 	%\newpage
 	%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
