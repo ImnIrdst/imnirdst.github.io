@@ -332,6 +332,12 @@ nav .brand-logo img {
   font-weight: 500;
 }
 
+.open-source-projects-list li {
+  list-style-type: disc;
+  color: #727272;
+  margin-left: 32px;
+}
+
 .resume-card-element-subtitle{
   font-size: 15px;
   font-weight: 400;
